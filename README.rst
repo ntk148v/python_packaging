@@ -20,8 +20,8 @@ Requirements for Packaging and Distributing
 1. Install pip, setuptools, and wheel
 
 * If you have Python 2 >=2.7.9 or Python 3 >=3.4 installed from `python.org
-  <https://www.python.org>`_, you will already have :ref:`pip` and
-  :ref:`setuptools`, but will need to upgrade to the latest version:
+  <https://www.python.org>`_, you will already have `pip` and
+  `setuptools`, but will need to upgrade to the latest version:
 
   On Linux or OS X:
 
@@ -38,7 +38,7 @@ Requirements for Packaging and Distributing
 
 * If you're using a Python install on Linux that's managed by the system package
   manager (e.g "yum", "apt-get" etc...), and you want to use the system package
-  manager to install or upgrade pip, then see :ref:`Installing
+  manager to install or upgrade pip, then see `Installing
   pip/setuptools/wheel with Linux Package Managers`
 
 * Otherwise:
@@ -47,7 +47,7 @@ Requirements for Packaging and Distributing
    <https://bootstrap.pypa.io/get-pip.py>`
 
  * Run ``python get-pip.py``. This will install or upgrade pip.
-   Additionally, it will install :ref:`setuptools` and :ref:`wheel` if they're
+   Additionally, it will install `setuptools` and `wheel` if they're
    not installed already.
 
 2. Requirements files
@@ -59,7 +59,7 @@ Requirements for Packaging and Distributing
 3. (For debian distro only) Install depend package:
 
   ::
-  
+
   	apt-get install python-stdeb fakeroot python-all
 
 
@@ -76,8 +76,7 @@ setup.py
 
 The most important file is "setup.py" which exists at the root of your project
 directory. For an example, see the `setup.py
-<https://github.com/pypa/sampleproject/blob/master/setup.py>`_ in the `PyPA
-sample project <https://github.com/pypa/sampleproject>`_.
+<sampleproject/setup.py>`.
 
 "setup.py" serves two primary functions:
 
@@ -85,7 +84,7 @@ sample project <https://github.com/pypa/sampleproject>`_.
    primary feature of ``setup.py`` is that it contains a global ``setup()``
    function.  The keyword arguments to this function are how specific details of
    your project are defined.  The most relevant arguments are explained in
-   :ref:`the section below <setup() args>`.
+   `the section below <setup() args>`.
 
 2. It's the command line interface for running various commands that
    relate to packaging tasks. To get a listing of available commands, run
