@@ -311,3 +311,44 @@ console_scripts
 Use "console_script" `entry points
 <https://setuptools.readthedocs.io/en/latest/setuptools.html#dynamic-discovery-of-services-and-plugins>`_
 to register your script interfaces.
+
+`Refs about 2 way to create Commandline scripts <https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html>`_.
+
+Packaging your project
+======================
+
+To have your project installable from a Package Index like PyPI, you’ll need to create a Distribution (aka “Package” ) for your project.
+
+Make Debian packages for a Python package
+-----------------------------------------
+
+You can generate both source and binary packages, like this:
+
+::
+
+  python setup.py --command-packages=stdeb.command bdist_deb
+
+or you can generate source packages only, like this:
+
+::
+
+  python setup.py --command-packages=stdeb.command sdist_dsc
+
+Make RPM packages for a Python package
+-----------------------------------------
+
+Similar with above section, let Python do this:
+
+::
+
+  python setup.py bdist_rpm
+
+
+References
+==========
+
+1. `Python Package User Guide <https://packaging.python.org/>`_.
+
+2. `Use stdeb to make Debian package for Python package <http://shallowsky.com/blog/programming/python-debian-packages-w-stdeb.html>`_.
+
+3. `Make RPM package for Python package <http://shallowsky.com/blog/programming/packaging-python-rpm.html>`_.
