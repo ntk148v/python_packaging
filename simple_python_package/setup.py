@@ -8,7 +8,6 @@ with open('README.rst') as readme_file:
 
 
 requirements = [
-    'Click>=6.0',
     # TODO: put package requirements here
 ]
 

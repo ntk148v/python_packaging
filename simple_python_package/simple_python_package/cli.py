@@ -1,14 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import click
 
-
-@click.command()
 def main(args=None):
-    """Console script for simple_python_package"""
-    click.echo("Replace this message by putting your code into "
-               "simple_python_package.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+    print("Testing!")
 
 
 if __name__ == "__main__":
