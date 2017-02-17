@@ -1,8 +1,5 @@
 """A setuptools based setup module.
 
-See:
-https://packaging.python.org/en/latest/distributing.html
-https://github.com/pypa/sampleproject
 """
 
 # Always prefer setuptools over distutils
@@ -29,11 +26,11 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/pypa/sampleproject',
+    url='https://github.com/ntk148v/sampleproject',
 
     # Author details
-    author='The Python Packaging Authority',
-    author_email='pypa-dev@googlegroups.com',
+    author='Nguyen Tuan Kien',
+    author_email='ntk148v@gmail.com',
 
     # Choose your license
     license='MIT',
